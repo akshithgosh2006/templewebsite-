@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Official Website of Kozhikodankandi Sree Bhagavathi Temple. Explore history, pooja timings, offerings, and festivals.">
+    <title>Kozhikodankandi Sree Bhagavathi Temple</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Glassmorphism Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <h1 class="logo">Sree Bhagavathi <span>Temple</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#offerings">Vazhipadu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#kanikka" class="btn-kanikka"><i class="fa-solid fa-om"></i> Virtual Kanikka</a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section id="home" class="hero parallax">
+        <div class="hero-content glass-card">
+            <h2>Kozhikodankandi Sree Bhagavathi</h2>
+            <p>Experience the divine presence and ancient traditions</p>
+
+            <div class="countdown-widget">
+                <h3>Next Festival Exquisite</h3>
+                <div id="countdown" class="timer">
+                    <!-- Timer populated by JS -->
+                    <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                    <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+                    <div class="time-box"><span id="minutes">00</span><small>Minutes</small></div>
+                    <div class="time-box"><span id="seconds">00</span><small>Seconds</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Pooja Timings Widget -->
+    <section class="pooja-timings bg-off-white py-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Daily Pooja Timings</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="timings-grid">
+                <div class="timing-card glass-card-dark">
+                    <i class="fa-solid fa-sun icon-gold"></i>
+                    <h3>Morning (Nada Thurakkal)</h3>
+                    <p class="time">05:00 AM - 8:00 AM</p>
+                    <ul class="pooja-list">
+                        <li><span>Palliyunarthal </span> <span>05:00 AM</span></li>
+                        <li><span>Ganapathi Homam </span> <span>06:00 AM</span></li>
+                        <li><span>Kalasam, Usha Pooja, Sopana Sangeetham </span> <span>08:00 AM</span></li>
+                    </ul>
+                </div>
+                <div class="timing-card glass-card-dark">
+                    <i class="fa-solid fa-moon icon-gold"></i>
+                    <h3>Evening and Night(Theyyam)</h3>
+                    <p class="time">05:30 PM - 08:00 PM</p>
+                    <ul class="pooja-list">
+                        <li><span>Bhagavathi Thira accompanied by Thalappoli</span> <span>07:00 PM</span></li>
+                        <li><span>Vettumurthi Thira</span> <span>10:00 PM</span></li>
+                        <li><span>Bhairavan Vilakku</span> <span>12:30 AM</span></li>
+                        <li><span>Following... Gulikan Thira, Bhairavan Thira, Guru Karanavar Thira, Bhagavathi
+                                Thira</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history py-section">
+        <div class="container flex-row">
+            <div class="history-content">
+                <h2>Legend & Origin</h2>
+                <div class="divider left-div"></div>
+                <p>The Kozhikodankandi Sree Bhagavathi Temple holds a rich legacy deeply rooted in the cultural fabric
+                    of Kerala. According to the ancient legends, the divine presence of Sree Bhagavathi graced this
+                    sacred land to protect the devotees and vanquish evil.</p>
+                <p>Passed down through generations, the traditions observed here are a testament to our steadfast faith.
+                    The temple architecture, the serene pond, and the majestic banyan tree have witnessed centuries of
+                    devotion, rituals, and grand festivals.</p>
+            </div>
+            <div class="history-image">
+                <div class="image-frame">
+                    <div class="placeholder-img"
+                        style="background-image: url('images/temple_history.jpeg'); background-size: cover; background-position: center; height: 100%; width: 100%; border-radius: 4px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offerings / Vazhipadu Section -->
+    <section id="offerings" class="offerings bg-off-white py-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Offerings (Vazhipadu)</h2>
+                <div class="divider"></div>
+                <p>Search and find details of various poojas and offerings you can dedicate to the deity.</p>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="vazhipaduSearch" placeholder="Search for a pooja (e.g., Pushpanjali)..."
+                    class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+
+            <div class="offerings-grid" id="offeringsList">
+                <!-- Populated/Filtered by JS -->
+                <div class="offering-card">
+                    <h4>Pushpanjali</h4>
+                    <p class="desc">Floral offering for health and prosperity.</p>
+                    <p class="rate">₹ 20.00</p>
+                </div>
+                <div class="offering-card">
+                    <h4>Raktha Pushpanjali</h4>
+                    <p class="desc">Offering with red flowers, specially for Bhagavathi.</p>
+                    <p class="rate">₹ 25.00</p>
+                </div>
+                <div class="offering-card">
+                    <h4>Ganapathi Homam</h4>
+                    <p class="desc">For removing obstacles, performed early morning.</p>
+                    <p class="rate">₹ 150.00</p>
+                </div>
+                <div class="offering-card">
+                    <h4>Chuttu Vilakku</h4>
+                    <p class="desc">Lighting lamps around the sanctum for overall well-being.</p>
+                    <p class="rate">₹ 500.00</p>
+                </div>
+                <div class="offering-card">
+                    <h4>Payasam</h4>
+                    <p class="desc">Sweet offering denoting devotion and joy.</p>
+                    <p class="rate">₹ 100.00</p>
+                </div>
+                <div class="offering-card">
+                    <h4>Shakteya Pooja</h4>
+                    <p class="desc">A powerful offering to the Goddess for overall well-being and removing negative
+                        energies.</p>
+                    <p class="rate">₹ 4000.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery py-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Temple Gallery</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item item-large"
+                    style="background-image: linear-gradient(135deg, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('images/gulikan_theyyam.png');">
+                    <span>Gulikan Theyyam</span>
+                </div>
+                <div class="gallery-item"
+                    style="background-image: linear-gradient(135deg, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('images/temple_nilavilakku.jpeg');">
+                    <span>*</span>
+                </div>
+                <div class="gallery-item"
+                    style="background-image: linear-gradient(135deg, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('images/Gemini_Generated_Image_tuu0a4tuu0a4tuu0.png');">
+                    <span>Festivals</span>
+                </div>
+                <div class="gallery-item"
+                    style="background-image: linear-gradient(135deg, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('images/Gemini_Generated_Image_tuu0a4tuu0a4tuu0.png');">
+                    <span>Theyyam Form</span>
+                </div>
+                <div class="gallery-item item-wide"
+                    style="background-image: linear-gradient(135deg, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('images/gulikan_theyyam.png');">
+                    <span>*</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="location" class="location bg-off-white py-section">
+        <div class="container flex-row">
+            <div class="contact-form-container glass-card-dark" style="overflow-x: auto;">
+                <h2>Temple Trust Committee Members</h2>
+                <table style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 1rem;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--gold); color: var(--gold);">
+                            <th style="padding: 0.5rem;">No.</th>
+                            <th style="padding: 0.5rem;">Name</th>
+                            <th style="padding: 0.5rem;">Role</th>
+                            <th style="padding: 0.5rem;">Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0.5rem;">—</td>
+                            <td style="padding: 0.5rem;">Raghavakkurup</td>
+                            <td style="padding: 0.5rem;">Patron (Rakshadhikari)</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">01</td>
+                            <td style="padding: 0.5rem;">Shaji G.</td>
+                            <td style="padding: 0.5rem;">Chairman</td>
+                            <td style="padding: 0.5rem;">9947473955</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">02</td>
+                            <td style="padding: 0.5rem;">Jaleesh Kumar K.K.</td>
+                            <td style="padding: 0.5rem;">Secretary</td>
+                            <td style="padding: 0.5rem;">6238037782</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">03</td>
+                            <td style="padding: 0.5rem;">Chandran P.P.</td>
+                            <td style="padding: 0.5rem;">President</td>
+                            <td style="padding: 0.5rem;">9847197271</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">04</td>
+                            <td style="padding: 0.5rem;">Chathukutty C.P.</td>
+                            <td style="padding: 0.5rem;">Vice President</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">05</td>
+                            <td style="padding: 0.5rem;">Suresh Babu</td>
+                            <td style="padding: 0.5rem;">Joint Secretary</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">06</td>
+                            <td style="padding: 0.5rem;">Rajan N.C.</td>
+                            <td style="padding: 0.5rem;">Treasurer</td>
+                            <td style="padding: 0.5rem;">9048419717</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">07</td>
+                            <td style="padding: 0.5rem;">Babu G., Shashi G.</td>
+                            <td style="padding: 0.5rem;">Member</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">08</td>
+                            <td style="padding: 0.5rem;">Madhusoodanan K.K.</td>
+                            <td style="padding: 0.5rem;">Member</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">09</td>
+                            <td style="padding: 0.5rem;">Rajeevan N., Biju K.K.</td>
+                            <td style="padding: 0.5rem;">Member</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">10</td>
+                            <td style="padding: 0.5rem;">Rajeevan K.K.</td>
+                            <td style="padding: 0.5rem;">Member</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">11</td>
+                            <td style="padding: 0.5rem;">Gireesh C.G., Ratheesh, Bijeesh M.</td>
+                            <td style="padding: 0.5rem;">Member</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">12</td>
+                            <td style="padding: 0.5rem;">Sathyan Thaliyil</td>
+                            <td style="padding: 0.5rem;">Member</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.5rem;">13</td>
+                            <td style="padding: 0.5rem;">Pradeesh Kumar</td>
+                            <td style="padding: 0.5rem;">Member</td>
+                            <td style="padding: 0.5rem;">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="map-container">
+                <!-- Embedded Google Map Placeholder - Kozhikode Area generally -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d977.5999297683977!2d75.80481186955072!3d11.451047813706333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba663ff975d2fa9%3A0x97acf9712a509828!2sKozhikodankandi%20Sree%20Bhagavathi%20Temple!5e0!3m2!1sen!2sin!4v1773106870415!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Kanikka Modal/Section -->
+    <section id="kanikka" class="kanikka py-section parallax">
+        <div class="container center-text">
+            <div class="glass-card kanikka-card">
+                <h2>Virtual Kanikka (E-Hundi)</h2>
+                <div class="divider mx-auto"></div>
+                <p>Offer your kanikka digitally. May the Goddess bless you.</p>
+
+                <div class="upi-placeholder">
+                    <i class="fa-solid fa-qrcode fa-5x icon-gold"></i>
+                    <p class="mt-2">Scan with any UPI app</p>
+                    <p class="upi-id">UPI ID: <strong>@</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Sree Bhagavathi</h2>
+                    <p>Preserving tradition and spreading divine light.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#offerings">Offerings</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Reach Us</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Kozhikode, Kerala, India</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@sreebhagavathi.org</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 123456789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kozhikodankandi Sree Bhagavathi Temple. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
